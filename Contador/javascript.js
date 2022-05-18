@@ -14,6 +14,10 @@ function increment() {
         document.getElementById("adicionar").disabled = true;
         alert("Valor máximo alcançado.")
     }
+    if(startNumber >= -9) {
+        document.getElementById("subtrair").disabled = false;
+    }
+   
 }
 
 function decrement() {
@@ -29,6 +33,10 @@ function decrement() {
        document.getElementById("subtrair").disabled = true;
        alert("Valor mínimo alcançado.")
    }
+   if(startNumber <=9) {
+    document.getElementById("adicionar").disabled = false;
+   }
+
 }
 
 function contador() {
